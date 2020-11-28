@@ -222,7 +222,14 @@ p.date {
 #contact > div {
     padding: 1rem;
 }
+#contact h3 {
+    margin-bottom: 1rem;
+}
 #contact > div:first-child{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     border-right: 0.2rem dotted #077;
 }
 #contact ul{
@@ -238,7 +245,10 @@ p.date {
     margin: 0.5rem;
     padding: 1rem;
     border-radius: 1rem;
-    border: none;
+    border: 0.2rem solid #fff;
+}
+#contact input:focus{
+    border-color: #f90;
 }
 #contact textarea{
     resize: none;
