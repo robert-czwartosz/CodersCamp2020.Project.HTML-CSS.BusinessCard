@@ -9,6 +9,10 @@
     margin: 0;
     padding: 0;
 }
+a {
+    text-decoration: none;
+    color: white;
+}
 body {
     font-family: sans-serif;
     background-color: hsl(
@@ -120,7 +124,7 @@ section {
     margin: 3rem 0;
 }
 h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 1em;
 }
 /* About me */
@@ -145,3 +149,35 @@ h2 {
     border-left: 0.2rem dotted #077;
 }
 /* Skills */
+#skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+#skills > div{
+    box-sizing: border-box;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+#skills > div:nth-child(2n){
+    background-color: #400;
+}
+#skills > div:nth-child(2n+1){
+    background-color: #040;
+}
+h3 {
+    font-size: 2rem;
+}
+#skills > div > p:first-of-type{
+    padding: 2rem 0;
+}
+#skills ul {
+    list-style-type: none;
+}
+#skills li {
+    display: inline-block;
+    margin: 0.3em 1em;
+    background-color: hsl(var(--bg-H), var(--bg-S), var(--bg-L));
+    padding: 0.5rem;
+}
