@@ -117,7 +117,7 @@ ul.media a{
     border: 0.2rem solid #f90;
 }
 /* Sections */
-section {
+article > section {
     background-color: hsl(var(--bg-H), var(--bg-S), calc(var(--bg-L) + 2%));
     box-sizing: border-box;
     padding: 1em 3em;
@@ -186,22 +186,32 @@ h3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-#projects > div{
+#projects > section{
     box-sizing: border-box;
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-#projects > div:nth-of-type(4n+1){
+#projects > section:nth-of-type(4n+1){
     background-color: rgb(156, 146, 6);
 }
-#projects > div:nth-of-type(4n+2){
+#projects > section:nth-of-type(4n+2){
     background-color: rgb(7, 17, 112);
 }
-#projects > div:nth-of-type(4n+3){
+#projects > section:nth-of-type(4n+3){
     background-color: rgb(7, 17, 112);
 }
-#projects > div:nth-of-type(4n){
+#projects > section:nth-of-type(4n){
     background-color: rgb(156, 146, 6);
 }
 #projects p:nth-of-type(2){
     text-align: justify;
+}
+p.date {
+    color: lightgrey;
+    line-height: 1;
+}
+#projects > section > header {
+    margin-bottom: 3em;
 }
