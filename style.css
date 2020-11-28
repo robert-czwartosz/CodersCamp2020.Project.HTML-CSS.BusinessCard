@@ -121,7 +121,9 @@ section {
 }
 h2 {
     font-size: 2rem;
+    margin-bottom: 1em;
 }
+/* About me */
 #about-me {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -142,3 +144,4 @@ h2 {
     text-align: justify;
     border-left: 0.2rem dotted #077;
 }
+/* Skills */
