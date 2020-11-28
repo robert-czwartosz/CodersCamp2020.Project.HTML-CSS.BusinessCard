@@ -21,6 +21,7 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    line-height: 1.5;
 }
 body > *{
     width: 50%;
@@ -69,7 +70,7 @@ ul.menu li:last-child{
 body > header > div {
     width: 50%;
     background-color: var(--navbar-border-color);
-    padding: 5em 0;
+    padding: 5em 0 2em;
 }
 h1 {
     font-size: 9em;
@@ -110,4 +111,34 @@ ul.media a{
     background: white;
     padding: 0.5em 1em;
     border: 0.2rem solid #f90;
+}
+/* Sections */
+section {
+    background-color: hsl(var(--bg-H), var(--bg-S), calc(var(--bg-L) + 2%));
+    box-sizing: border-box;
+    padding: 1em 3em;
+    margin: 3rem 0;
+}
+h2 {
+    font-size: 2rem;
+}
+#about-me {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    
+}
+#about-me > ul {
+    list-style-type: none;
+    text-align: left;
+    align-self: center;
+}
+#about-me li span {
+    color: orange;
+}
+#about-me > div {
+    box-sizing: border-box;
+    padding: 1em;
+    text-align: justify;
+    border-left: 0.2rem dotted #077;
 }
