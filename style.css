@@ -181,3 +181,27 @@ h3 {
     background-color: hsl(var(--bg-H), var(--bg-S), var(--bg-L));
     padding: 0.5rem;
 }
+/* Projects */
+#projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#projects > div{
+    box-sizing: border-box;
+    padding: 2rem;
+}
+#projects > div:nth-of-type(4n+1){
+    background-color: rgb(156, 146, 6);
+}
+#projects > div:nth-of-type(4n+2){
+    background-color: rgb(7, 17, 112);
+}
+#projects > div:nth-of-type(4n+3){
+    background-color: rgb(7, 17, 112);
+}
+#projects > div:nth-of-type(4n){
+    background-color: rgb(156, 146, 6);
+}
+#projects p:nth-of-type(2){
+    text-align: justify;
+}
