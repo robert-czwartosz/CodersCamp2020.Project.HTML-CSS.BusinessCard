@@ -86,7 +86,6 @@ body > header p{
 }
 ul.media {
     list-style-type: none;
-    margin-bottom: 3rem;
 }
 ul.media li{
     display: inline;
@@ -214,4 +213,53 @@ p.date {
 }
 #projects > section > header {
     margin-bottom: 3em;
+}
+/* Contact */
+#contact {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+#contact > div {
+    padding: 1rem;
+}
+#contact > div:first-child{
+    border-right: 0.2rem dotted #077;
+}
+#contact ul{
+    list-style-type: none;
+    text-align: left;
+}
+#contact form{
+    display: flex;
+    flex-direction: column;
+}
+#contact input{
+    text-align: center;
+    margin: 0.5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: none;
+}
+#contact textarea{
+    resize: none;
+    font-family: inherit;
+    height: 7em;
+    padding: 1em;
+    margin: 0.5rem;
+}
+#contact input[type="submit"]{
+    box-sizing: content-box;
+    align-self: center;
+    background-image: linear-gradient(to right, #f60, #f90);
+    color: white;
+    font-size: 2rem;
+    border: none;
+    border-radius: 2rem;
+    padding: calc(1rem + 0.2rem) calc(2rem + 0.2rem);
+}
+#contact input[type="submit"]:hover{
+    color: orange;
+    background: white;
+    padding: 1rem 2rem;
+    border: 0.2rem solid #f90;
 }
