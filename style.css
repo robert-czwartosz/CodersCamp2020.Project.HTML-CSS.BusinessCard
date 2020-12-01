@@ -84,6 +84,7 @@ h1 {
 body > header p{
     font-size: 1.3rem;
     margin-bottom: 2rem;
+    padding: 0 2em;
 }
 ul.media {
     font-size: 3rem;
