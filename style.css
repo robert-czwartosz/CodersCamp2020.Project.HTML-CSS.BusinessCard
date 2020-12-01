@@ -100,20 +100,22 @@ ul.media a{
     display: flex;
     justify-content: space-around;
 }
-#contact-cv button{
+button{
     background-image: linear-gradient(to right, #f60, #f90);
     color: white;
     font-size: 2rem;
     border: none;
-    border-radius: 1em;
-    padding: calc(0.5em + 0.2rem) calc(1em + 0.2rem);
+    border-radius: 2rem;
+    padding: calc(1rem + 3px) calc(2rem + 3px);
     text-decoration: none;
 }
-#contact-cv button:hover{
+button:hover{
     color: orange;
     background: white;
-    padding: 0.5em 1em;
-    border: 0.2rem solid #f90;
+    padding: 1rem 2rem;
+    border: 3px solid #f90;
+    pointer-events: inherit;
+    cursor: pointer;
 }
 /* Sections */
 article > section {
@@ -173,17 +175,24 @@ h3 {
 }
 #skills ul {
     list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 #skills li {
     display: inline-block;
     margin: 0.3em 1em;
     background-color: hsl(var(--bg-H), var(--bg-S), var(--bg-L));
+}
+#skills li a{
+    display: inline-block;
     padding: 0.5rem;
 }
 /* Projects */
 #projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    text-align: center;
 }
 #projects > section{
     box-sizing: border-box;
@@ -204,15 +213,32 @@ h3 {
 #projects > section:nth-of-type(4n){
     background-color: rgb(156, 146, 6);
 }
-#projects p:nth-of-type(2){
-    text-align: justify;
-}
 p.date {
     color: lightgrey;
     line-height: 1;
 }
+#projects > section > p:nth-child(2) {
+    text-align: justify;
+    text-align-last: center;
+}
 #projects > section > header {
     margin-bottom: 3em;
+}
+.used-skills {
+    list-style-type: none;
+    margin-bottom: 2em;
+}
+.used-skills > li{
+    display: inline-block;
+    margin: 0.3em 1em;
+    background-color: hsl(var(--bg-H), var(--bg-S), var(--bg-L));
+}
+.used-skills > li > a{
+    display: block;
+    padding: 0.5rem;
+}
+#projects > section:last-child {
+    align-self: center;
 }
 /* Contact */
 #contact {
@@ -265,13 +291,14 @@ p.date {
     font-size: 2rem;
     border: none;
     border-radius: 2rem;
-    padding: calc(1rem + 0.2rem) calc(2rem + 0.2rem);
+    padding: calc(1rem + 3px) calc(2rem + 3px);
 }
 #contact input[type="submit"]:hover{
     color: orange;
     background: white;
     padding: 1rem 2rem;
-    border: 0.2rem solid #f90;
+    border: 3px solid #f90;
+    cursor: pointer;
 }
 footer {
     box-sizing: border-box;
