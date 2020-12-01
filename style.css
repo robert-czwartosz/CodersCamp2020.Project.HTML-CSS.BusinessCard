@@ -119,21 +119,20 @@ button:hover{
 }
 /* Sections */
 article > section {
-    background-color: hsl(var(--bg-H), var(--bg-S), calc(var(--bg-L) + 2%));
     box-sizing: border-box;
-    padding: 1em 3em;
     margin: 3rem 0;
+}
+article > section > div{
+    background-color: hsl(var(--bg-H), var(--bg-S), calc(var(--bg-L) + 2%));
+    padding: 1em 3em;
 }
 h2 {
     font-size: 3rem;
-    margin-bottom: 1em;
 }
 /* About me */
 #about-me {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-
-    
+    grid-template-columns: 16em 1fr;
 }
 #about-me > ul {
     list-style-type: none;
