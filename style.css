@@ -175,6 +175,7 @@ h2 {
 #skills {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
 }
 #skills > div{
     box-sizing: border-box;
@@ -214,6 +215,7 @@ h3 {
 #projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 1rem;
     text-align: center;
 }
 #projects > section{
