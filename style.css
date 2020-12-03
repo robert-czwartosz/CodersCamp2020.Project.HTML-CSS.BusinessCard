@@ -264,6 +264,22 @@ p.date {
 #projects > section:last-child {
     align-self: center;
 }
+@media (max-width: 1500px) {
+    #projects {
+        grid-template-columns: 1fr;
+    }
+    #projects > section:nth-of-type(2n+1){
+        background-color: rgb(156, 146, 6);
+    }
+    #projects > section:nth-of-type(2n){
+        background-color: rgb(7, 17, 112);
+    }
+}
+@media (max-width: 650px) {
+    article > section > div{
+        padding: 1rem 1rem;
+    }
+}
 /* Contact */
 #contact {
     display: grid;
