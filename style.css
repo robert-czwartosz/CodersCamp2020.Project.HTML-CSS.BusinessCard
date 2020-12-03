@@ -354,7 +354,6 @@ p.date {
 }
 #contact ul{
     list-style-type: none;
-    text-align: left;
 }
 #contact form{
     display: flex;
@@ -394,6 +393,17 @@ p.date {
     border: 3px solid #f90;
     cursor: pointer;
 }
+@media (max-width: 950px) {
+    #contact {
+        grid-template-columns: 1fr;
+    }
+    #contact > div:first-child{
+        text-align: center;
+        border-right: none;
+        border-bottom: 0.2rem dotted #077;
+    }
+}
+/* Footer */
 footer {
     box-sizing: border-box;
     background-color: hsl(var(--bg-H), var(--bg-S), calc(var(--bg-L) + 2%));
