@@ -77,21 +77,24 @@ body > header > div {
     padding: 5em 0 2em;
 }
 h1 {
-    font-size: 9em;
+    font-size: 140px;
     color: #dd0;
+    letter-spacing: 0.2em;
 }
 body > header p{
-    font-size: 1.3em;
+    font-size: 1.3rem;
     margin-bottom: 2rem;
+    padding: 0 2em;
 }
 ul.media {
+    font-size: 3rem;
     list-style-type: none;
 }
 ul.media li{
     display: inline;
 }
 ul.media a{
-    font-size: 2rem;
+    
     color: white;
     text-decoration: none;
     text-align: center;
@@ -100,38 +103,67 @@ ul.media a{
     display: flex;
     justify-content: space-around;
 }
-#contact-cv button{
+button{
     background-image: linear-gradient(to right, #f60, #f90);
     color: white;
     font-size: 2rem;
     border: none;
-    border-radius: 1em;
-    padding: calc(0.5em + 0.2rem) calc(1em + 0.2rem);
+    border-radius: 2em;
+    padding: calc(1rem + 3px) calc(2rem + 3px);
     text-decoration: none;
 }
-#contact-cv button:hover{
+button:hover{
     color: orange;
     background: white;
-    padding: 0.5em 1em;
-    border: 0.2rem solid #f90;
+    padding: 1rem 2rem;
+    border: 3px solid #f90;
+    pointer-events: inherit;
+    cursor: pointer;
+}
+@media (max-width: 1300px){
+    body > * {
+        width: 90%;
+    }
+    body > header > div {
+        width: 90%;
+    }
+    ul.media {
+        margin: 1em 0;
+    }
+}
+@media (max-width: 1100px){
+    body > * {
+        width: 100%;
+    }
+    body > header > div {
+        width: 100%;
+    }
+}
+@media (max-width: 750px){
+    h1 {
+        font-size: 80px;
+    }
+    button {
+        font-size: 1.5rem;
+    }
+    
 }
 /* Sections */
 article > section {
-    background-color: hsl(var(--bg-H), var(--bg-S), calc(var(--bg-L) + 2%));
     box-sizing: border-box;
-    padding: 1em 3em;
     margin: 3rem 0;
+}
+article > section > div{
+    background-color: hsl(var(--bg-H), var(--bg-S), calc(var(--bg-L) + 2%));
+    padding: 1em 3em;
 }
 h2 {
     font-size: 3rem;
-    margin-bottom: 1em;
 }
 /* About me */
 #about-me {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-
-    
+    grid-template-columns: 16em 1fr;
 }
 #about-me > ul {
     list-style-type: none;
@@ -147,43 +179,98 @@ h2 {
     text-align: justify;
     border-left: 0.2rem dotted #077;
 }
+@media (max-width: 800px) {
+    #about-me {
+        grid-template: 6em 1fr / 1fr;
+        justify-items: center;
+        gap: 1rem;
+    }
+    #about-me > ul {
+        text-align: center;
+        padding: 1em;
+        border:  0.2rem dotted #077;
+    }
+    #about-me > div {
+        border-left: none;
+        text-align-last: center;
+    }
+}
 /* Skills */
 #skills {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
 }
-#skills > div{
+#skill-ai, #skill-desktop {
+    grid-column: span 2;
+}
+.skill{
     box-sizing: border-box;
     padding: 2rem;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    background-color: #252525;
 }
-#skills > div:nth-child(2n){
-    background-color: #400;
+.skill:nth-child(2n){
+    border: 1rem solid #400;
 }
-#skills > div:nth-child(2n+1){
-    background-color: #040;
+.skill:nth-child(2n+1){
+    border: 1rem solid#040;
 }
 h3 {
     font-size: 2rem;
 }
-#skills > div > p:first-of-type{
+.skill > p:first-of-type{
     padding: 2rem 0;
 }
-#skills ul {
+.skill ul {
+    margin-top: 1em;
     list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
-#skills li {
+.skill li {
     display: inline-block;
-    margin: 0.3em 1em;
-    background-color: hsl(var(--bg-H), var(--bg-S), var(--bg-L));
+    margin: 0.5em 1em;
+    background-color: black; /*hsl(var(--bg-H), var(--bg-S), var(--bg-L));*/
+}
+.skill li a{
+    display: inline-block;
     padding: 0.5rem;
+}
+@media (min-width: 1300px) and (max-width: 1500px) {
+    #skills {
+        grid-template-columns: 1fr 1fr;
+    }
+    #skill-db {
+        grid-column: span 2;
+    }
+    #skill-desktop {
+        grid-area: span 2 / span 1;
+        justify-content: space-around;
+    }
+    #skill-desktop ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+@media (max-width: 1300px) {
+    #skills {
+        grid-template-columns: 1fr;
+    }
+    #skill-ai, #skill-desktop {
+        grid-area: span 1 / span 1;
+    }
 }
 /* Projects */
 #projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    text-align: center;
 }
 #projects > section{
     box-sizing: border-box;
@@ -204,15 +291,48 @@ h3 {
 #projects > section:nth-of-type(4n){
     background-color: rgb(156, 146, 6);
 }
-#projects p:nth-of-type(2){
-    text-align: justify;
-}
 p.date {
     color: lightgrey;
     line-height: 1;
 }
+#projects > section > p:nth-child(2) {
+    text-align: justify;
+    text-align-last: center;
+}
 #projects > section > header {
     margin-bottom: 3em;
+}
+.used-skills {
+    list-style-type: none;
+    margin-bottom: 2em;
+}
+.used-skills > li{
+    display: inline-block;
+    margin: 0.3em 1em;
+    background-color: hsl(var(--bg-H), var(--bg-S), var(--bg-L));
+}
+.used-skills > li > a{
+    display: block;
+    padding: 0.5rem;
+}
+#projects > section:last-child {
+    align-self: center;
+}
+@media (max-width: 1500px) {
+    #projects {
+        grid-template-columns: 1fr;
+    }
+    #projects > section:nth-of-type(2n+1){
+        background-color: rgb(156, 146, 6);
+    }
+    #projects > section:nth-of-type(2n){
+        background-color: rgb(7, 17, 112);
+    }
+}
+@media (max-width: 650px) {
+    article > section > div{
+        padding: 1rem 1rem;
+    }
 }
 /* Contact */
 #contact {
@@ -234,7 +354,6 @@ p.date {
 }
 #contact ul{
     list-style-type: none;
-    text-align: left;
 }
 #contact form{
     display: flex;
@@ -265,14 +384,26 @@ p.date {
     font-size: 2rem;
     border: none;
     border-radius: 2rem;
-    padding: calc(1rem + 0.2rem) calc(2rem + 0.2rem);
+    padding: calc(1rem + 3px) calc(2rem + 3px);
 }
 #contact input[type="submit"]:hover{
     color: orange;
     background: white;
     padding: 1rem 2rem;
-    border: 0.2rem solid #f90;
+    border: 3px solid #f90;
+    cursor: pointer;
 }
+@media (max-width: 950px) {
+    #contact {
+        grid-template-columns: 1fr;
+    }
+    #contact > div:first-child{
+        text-align: center;
+        border-right: none;
+        border-bottom: 0.2rem dotted #077;
+    }
+}
+/* Footer */
 footer {
     box-sizing: border-box;
     background-color: hsl(var(--bg-H), var(--bg-S), calc(var(--bg-L) + 2%));
