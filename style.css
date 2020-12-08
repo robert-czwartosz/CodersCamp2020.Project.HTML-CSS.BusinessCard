@@ -108,23 +108,17 @@ main{
         background-color: green;
     }
     50% {
-        background-color: yellow;
+        background-color: white;
         transform: scale(4);
     }
     66% {
         top: calc(var(--fly-end3)); 
         left: calc(var(--fly-2thirds));
     }
-    83% {
-        background-color: yellow;
-    }
-    84% {
-        background-color: green;
-    }
     100% {
         top: calc(var(--fly-end)); 
         left: calc(var(--fly-end));
-        background-color: green;
+        background-color: white;
         transform: scale(1);
     }
 }
@@ -147,23 +141,17 @@ main{
         background-color: purple;
     }
     50% {
-        background-color: pink;
+        background-color: white;
         transform: scale(4);
     }
     66% {
         top: calc(var(--fly-end3));
         right: calc(var(--fly-2thirds));
     }
-    83% {
-        background-color: pink;
-    }
-    84% {
-        background-color: purple;
-    }
     100% {
         top: calc(var(--fly-end)); 
         right: calc(var(--fly-end));
-        background-color: purple;
+        background-color: white;
         transform: scale(1);
     }
 }
@@ -187,23 +175,17 @@ main{
         background-color: purple;
     }
     50% {
-        background-color: red;
+        background-color: white;
         transform: scale(4);
     }
     66% {
         bottom: calc(var(--fly-end3)); 
         right: calc(var(--fly-2thirds));
     }
-    83% {
-        background-color: red;
-    }
-    84% {
-        background-color: purple;
-    }
     100% {
         bottom: calc(var(--fly-end)); 
         right: calc(var(--fly-end));
-        background-color: purple;
+        background-color: white;
         transform: scale(1);
     }
 }
@@ -227,23 +209,17 @@ main{
         background-color: green;
     }
     50% {
-        background-color: blue;
+        background-color: white;
         transform: scale(4);
     }
     66% {
         bottom: calc(var(--fly-end3)); 
         left: calc(var(--fly-2thirds));
     }
-    83% {
-        background-color: blue;
-    }
-    84% {
-        background-color: green;
-    }
     100% {
         bottom: calc(var(--fly-end)); 
         left: calc(var(--fly-end));
-        background-color: green;
+        background-color: white;
         transform: scale(1);
     }
 }
