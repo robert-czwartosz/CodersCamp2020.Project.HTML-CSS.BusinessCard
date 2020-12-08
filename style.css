@@ -4,6 +4,13 @@
     --bg-S: 0%;
     --bg-L: 15%;
     --navbar-border-color: #077;
+    --square-s: 10px;
+    --fly-third: 33% - var(--square-s)/2;
+    --fly-2thirds: 66% - var(--square-s)/2;
+    --fly-end: 100% - var(--square-s);
+    --fly-end2: 100% - var(--square-s)*2;
+    --fly-end3: var(--square-s);
+    --fly-properties: 10s linear 0s infinite alternate;
 }
 * {
     margin: 0;
@@ -43,6 +50,203 @@ main{
         calc(var(--bg-L) + 7%)
         );
 }
+/* Animation */
+#animation {
+    position: relative;
+    width: 100%;
+    background-color: hsl(var(--bg-H), var(--bg-S), var(--bg-L));
+}
+.square {
+    position: absolute;
+    width: var(--square-s);
+    height: var(--square-s);
+    background-color: #dd0;
+    border-radius: 20%;
+}
+#square1 {
+    top: 0%;
+    left: 0%;
+    background-color: yellow;
+    animation: fly1 var(--fly-properties);
+}
+#square2 {
+    top: 0%;
+    right: 0%;
+    background-color: pink;
+    animation: fly2 var(--fly-properties);
+}
+#square3 {
+    bottom: 0%;
+    right: 0%;
+    background-color: red;
+    animation: fly3 var(--fly-properties);
+}
+#square4 {
+    bottom: 0%;
+    left: 0%;
+    animation: fly4 var(--fly-properties);
+    background-color: blue;
+}
+@keyframes fly1 {
+    0% {
+        top: 0;
+        left: 0;
+        transform: scale(1);
+    }
+    16% {
+        background-color: yellow;
+    }
+    17% {
+        background-color: green;
+    }
+    33% {
+        top: calc(var(--fly-end2)); 
+        left: calc(var(--fly-third));
+        background-color: green;
+    }
+    49% {
+        background-color: green;
+    }
+    50% {
+        background-color: yellow;
+        transform: scale(4);
+    }
+    66% {
+        top: calc(var(--fly-end3)); 
+        left: calc(var(--fly-2thirds));
+    }
+    83% {
+        background-color: yellow;
+    }
+    84% {
+        background-color: green;
+    }
+    100% {
+        top: calc(var(--fly-end)); 
+        left: calc(var(--fly-end));
+        background-color: green;
+        transform: scale(1);
+    }
+}
+@keyframes fly2 {
+    0% {
+        top: 0; right: 0;
+        transform: scale(1);
+    }
+    16% {
+        background-color: pink;
+    }
+    17% {
+        background-color: purple;
+    }
+    33% {
+        top: calc(var(--fly-end2)); 
+        right: calc(var(--fly-third));
+    }
+    49% {
+        background-color: purple;
+    }
+    50% {
+        background-color: pink;
+        transform: scale(4);
+    }
+    66% {
+        top: calc(var(--fly-end3));
+        right: calc(var(--fly-2thirds));
+    }
+    83% {
+        background-color: pink;
+    }
+    84% {
+        background-color: purple;
+    }
+    100% {
+        top: calc(var(--fly-end)); 
+        right: calc(var(--fly-end));
+        background-color: purple;
+        transform: scale(1);
+    }
+}
+@keyframes fly3 {
+    0% {
+        bottom: 0; 
+        right: 0;
+        transform: scale(1);
+    }
+    16% {
+        background-color: red;
+    }
+    17% {
+        background-color: purple;
+    }
+    33% {
+        bottom: calc(var(--fly-end2)); 
+        right: calc(var(--fly-third));
+    }
+    49% {
+        background-color: purple;
+    }
+    50% {
+        background-color: red;
+        transform: scale(4);
+    }
+    66% {
+        bottom: calc(var(--fly-end3)); 
+        right: calc(var(--fly-2thirds));
+    }
+    83% {
+        background-color: red;
+    }
+    84% {
+        background-color: purple;
+    }
+    100% {
+        bottom: calc(var(--fly-end)); 
+        right: calc(var(--fly-end));
+        background-color: purple;
+        transform: scale(1);
+    }
+}
+@keyframes fly4 {
+    0% {
+        bottom: 0; 
+        left: 0;
+        transform: scale(1);
+    }
+    16% {
+        background-color: blue;
+    }
+    17% {
+        background-color: green;
+    }
+    33% {
+        bottom: calc(var(--fly-end2)); 
+        left: calc(var(--fly-third));
+    }
+    49% {
+        background-color: green;
+    }
+    50% {
+        background-color: blue;
+        transform: scale(4);
+    }
+    66% {
+        bottom: calc(var(--fly-end3)); 
+        left: calc(var(--fly-2thirds));
+    }
+    83% {
+        background-color: blue;
+    }
+    84% {
+        background-color: green;
+    }
+    100% {
+        bottom: calc(var(--fly-end)); 
+        left: calc(var(--fly-end));
+        background-color: green;
+        transform: scale(1);
+    }
+}
 /* Navbar */
 nav {
     align-self: stretch;
@@ -51,7 +255,6 @@ ul.menu {
     background-color: hsl(var(--bg-H), var(--bg-S), calc(var(--bg-L) + 5%));
     display: flex;
     list-style-type: none;
-    margin-top: 1em;
     justify-content: center;
 }
 ul.menu li{
