@@ -54,6 +54,7 @@ main{
 #animation {
     position: relative;
     width: 100%;
+    height: 150px;
     background-color: hsl(var(--bg-H), var(--bg-S), var(--bg-L));
 }
 .square {
@@ -226,6 +227,10 @@ main{
 /* Navbar */
 nav {
     align-self: stretch;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    width: 100% !important;
 }
 ul.menu {
     background-color: hsl(var(--bg-H), var(--bg-S), calc(var(--bg-L) + 5%));
@@ -240,15 +245,63 @@ ul.menu li:last-child{
     border-right: var(--navbar-border-color) dotted 0.2em;
 }
 .menu a {
+    box-sizing: border-box;
     display: inline-block;
     color: white;
     text-decoration: none;
     text-align: center;
     padding: 1em;
+    width: 100%;
+    align-self: stretch;
 }
 .menu a:hover {
     background-color: hsl(var(--bg-H), var(--bg-S), calc(var(--bg-L) - 5%));
 }
+@media (min-width: 300px) and (max-width: 500px) {
+    ul.menu {
+        flex-wrap: wrap;
+    }
+    ul.menu li {
+        box-sizing: border-box;
+        width: 50%;
+        border: none;
+    }
+    .menu a {
+        padding: 0.5em 0;
+    }
+    ul.menu li:nth-child(2){
+        border-left: var(--navbar-border-color) dotted 0.2em;
+    }
+    ul.menu li:nth-child(3){
+        border-top: var(--navbar-border-color) dotted 0.2em;
+    }
+    ul.menu li:nth-child(4){
+        border-right: none;
+        border-left: var(--navbar-border-color) dotted 0.2em;
+        border-top: var(--navbar-border-color) dotted 0.2em;
+    }
+}
+@media (max-width: 300px) {
+    ul.menu {
+        flex-wrap: wrap;
+    }
+    .menu a {
+        padding: 0.5em 0;
+    }
+    ul.menu li {
+        box-sizing: border-box;
+        width: 100%;
+        border: none;
+        border-top: var(--navbar-border-color) dotted 0.2em;
+    }
+    ul.menu li:first-child{
+        border-top: none;
+    }
+    ul.menu li:last-child{
+        border-right: none;
+    }
+}
+
 /* Body Header */
 body > header > div {
     width: 70%;
@@ -273,7 +326,6 @@ ul.media li{
     display: inline;
 }
 ul.media a{
-    
     color: white;
     text-decoration: none;
     text-align: center;
@@ -327,6 +379,28 @@ button:hover{
     }
     
 }
+@media (max-width: 500px){
+    body > header p {
+        font-size: 1rem;
+    }
+    h1 {
+        font-size: 60px;
+    }
+    ul.media {
+        margin: 0.5em 0;
+    }
+    #contact-cv {
+        flex-direction: column;
+    }
+    #contact-cv button{
+        margin-top: 1rem;
+    }
+}
+@media (max-width: 300px){
+    h1 {
+        font-size: 40px;
+    }
+}
 /* Sections */
 article > section {
     box-sizing: border-box;
@@ -338,6 +412,16 @@ article > section > div{
 }
 h2 {
     font-size: 3rem;
+}
+@media (max-width: 500px) {
+    h2 {
+        font-size: 2rem;
+    }
+}
+@media (max-width: 300px) {
+    article > section > div{
+        padding: 1em 1em;
+    }
 }
 /* About me */
 #about-me {
@@ -374,6 +458,18 @@ h2 {
         text-align-last: center;
     }
 }
+@media (max-width: 500px) {
+    #about-me{
+        font-size: 1rem;
+        grid-template: 10em 1fr / 1fr;
+    }
+    #about-me > div {
+        padding: 0.2em;
+    }
+    #about-me > ul {
+        padding: 0.5em;
+    }
+}
 /* Skills */
 #skills {
     display: grid;
@@ -390,15 +486,22 @@ h2 {
     justify-content: space-between;
     flex-direction: column;
     background-color: #252525;
+    border-width: 1rem;
+    border-style: solid;
 }
 .skill:nth-child(2n){
-    border: 1rem solid #400;
+    border-color: #400;
 }
 .skill:nth-child(2n+1){
-    border: 1rem solid#040;
+    border-color: #040;
 }
 h3 {
     font-size: 2rem;
+}
+@media (max-width: 500px) {
+    h3 {
+        font-size: 1.5rem;
+    }
 }
 .skill > p:first-of-type{
     padding: 2rem 0;
@@ -444,6 +547,12 @@ h3 {
         grid-area: span 1 / span 1;
     }
 }
+@media (max-width: 500px) {
+    .skill{
+        padding: 0.5rem;
+        border-width: 0.5rem;
+    }
+}
 /* Projects */
 #projects {
     display: grid;
@@ -472,7 +581,10 @@ h3 {
 }
 p.date {
     color: lightgrey;
-    line-height: 1;
+    line-height: 1.2;
+}
+.date span {
+    white-space: nowrap;
 }
 #projects > section > p:nth-child(2) {
     text-align: justify;
@@ -497,6 +609,9 @@ p.date {
 #projects > section:last-child {
     align-self: center;
 }
+p > a {
+    text-decoration: underline;
+}
 @media (max-width: 1500px) {
     #projects {
         grid-template-columns: 1fr;
@@ -511,6 +626,24 @@ p.date {
 @media (max-width: 650px) {
     article > section > div{
         padding: 1rem 1rem;
+    }
+}
+@media (max-width: 500px) {
+    article > section > div{
+        padding: 1rem 1rem;
+    }
+    #projects > section{
+        padding: 1rem;
+    }
+    
+}
+@media (max-width: 300px) {
+    #projects button {
+        padding: calc(0.3rem + 3px) calc(0.6rem + 3px);
+        font-size: 1.2rem;
+    }
+    #projects button:hover {
+        padding: 0.3rem 0.6rem;
     }
 }
 /* Contact */
@@ -540,6 +673,7 @@ p.date {
 }
 #contact input{
     text-align: center;
+    font-size: 1rem;
     margin: 0.5rem;
     padding: 1rem;
     border-radius: 1rem;
@@ -551,6 +685,7 @@ p.date {
 #contact textarea{
     resize: none;
     font-family: inherit;
+    font-size: 1rem;
     height: 7em;
     padding: 1em;
     margin: 0.5rem;
@@ -580,6 +715,15 @@ p.date {
         text-align: center;
         border-right: none;
         border-bottom: 0.2rem dotted #077;
+    }
+}
+@media (max-width: 300px) {
+    #contact > div {
+        padding: 1rem 0;
+    }
+    #contact input{
+        margin: 0.5rem 0;
+        padding: 1rem 0;
     }
 }
 /* Footer */
