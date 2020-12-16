@@ -413,6 +413,11 @@ article > section > div{
 h2 {
     font-size: 3rem;
 }
+@media (max-width: 300px) {
+    article > section > div{
+        padding: 1em 1em;
+    }
+}
 /* About me */
 #about-me {
     display: grid;
@@ -446,6 +451,18 @@ h2 {
     #about-me > div {
         border-left: none;
         text-align-last: center;
+    }
+}
+@media (max-width: 500px) {
+    #about-me{
+        font-size: 1rem;
+        grid-template: 10em 1fr / 1fr;
+    }
+    #about-me > div {
+        padding: 0.2em;
+    }
+    #about-me > ul {
+        padding: 0.5em;
     }
 }
 /* Skills */
