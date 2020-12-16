@@ -244,6 +244,19 @@ ul.menu li{
 ul.menu li:last-child{
     border-right: var(--navbar-border-color) dotted 0.2em;
 }
+.menu a {
+    box-sizing: border-box;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 1em;
+    width: 100%;
+    align-self: stretch;
+}
+.menu a:hover {
+    background-color: hsl(var(--bg-H), var(--bg-S), calc(var(--bg-L) - 5%));
+}
 @media (min-width: 300px) and (max-width: 500px) {
     ul.menu {
         flex-wrap: wrap;
@@ -252,6 +265,9 @@ ul.menu li:last-child{
         box-sizing: border-box;
         width: 50%;
         border: none;
+    }
+    .menu a {
+        padding: 0.5em 0;
     }
     ul.menu li:nth-child(2){
         border-left: var(--navbar-border-color) dotted 0.2em;
@@ -269,6 +285,9 @@ ul.menu li:last-child{
     ul.menu {
         flex-wrap: wrap;
     }
+    .menu a {
+        padding: 0.5em 0;
+    }
     ul.menu li {
         box-sizing: border-box;
         width: 100%;
@@ -282,19 +301,7 @@ ul.menu li:last-child{
         border-right: none;
     }
 }
-.menu a {
-    box-sizing: border-box;
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    padding: 1em;
-    width: 100%;
-    align-self: stretch;
-}
-.menu a:hover {
-    background-color: hsl(var(--bg-H), var(--bg-S), calc(var(--bg-L) - 5%));
-}
+
 /* Body Header */
 body > header > div {
     width: 70%;
@@ -319,7 +326,6 @@ ul.media li{
     display: inline;
 }
 ul.media a{
-    
     color: white;
     text-decoration: none;
     text-align: center;
@@ -372,6 +378,28 @@ button:hover{
         font-size: 1.5rem;
     }
     
+}
+@media (max-width: 500px){
+    body > header p {
+        font-size: 1rem;
+    }
+    h1 {
+        font-size: 60px;
+    }
+    ul.media {
+        margin: 0.5em 0;
+    }
+    #contact-cv {
+        flex-direction: column;
+    }
+    #contact-cv button{
+        margin-top: 1rem;
+    }
+}
+@media (max-width: 300px){
+    h1 {
+        font-size: 40px;
+    }
 }
 /* Sections */
 article > section {
