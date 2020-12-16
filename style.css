@@ -673,6 +673,7 @@ p > a {
 }
 #contact input{
     text-align: center;
+    font-size: 1rem;
     margin: 0.5rem;
     padding: 1rem;
     border-radius: 1rem;
@@ -684,6 +685,7 @@ p > a {
 #contact textarea{
     resize: none;
     font-family: inherit;
+    font-size: 1rem;
     height: 7em;
     padding: 1em;
     margin: 0.5rem;
@@ -713,6 +715,15 @@ p > a {
         text-align: center;
         border-right: none;
         border-bottom: 0.2rem dotted #077;
+    }
+}
+@media (max-width: 300px) {
+    #contact > div {
+        padding: 1rem 0;
+    }
+    #contact input{
+        margin: 0.5rem 0;
+        padding: 1rem 0;
     }
 }
 /* Footer */
