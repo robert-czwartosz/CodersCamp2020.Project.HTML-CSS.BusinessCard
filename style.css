@@ -581,7 +581,10 @@ h3 {
 }
 p.date {
     color: lightgrey;
-    line-height: 1;
+    line-height: 1.2;
+}
+.date span {
+    white-space: nowrap;
 }
 #projects > section > p:nth-child(2) {
     text-align: justify;
@@ -606,6 +609,9 @@ p.date {
 #projects > section:last-child {
     align-self: center;
 }
+p > a {
+    text-decoration: underline;
+}
 @media (max-width: 1500px) {
     #projects {
         grid-template-columns: 1fr;
@@ -620,6 +626,24 @@ p.date {
 @media (max-width: 650px) {
     article > section > div{
         padding: 1rem 1rem;
+    }
+}
+@media (max-width: 500px) {
+    article > section > div{
+        padding: 1rem 1rem;
+    }
+    #projects > section{
+        padding: 1rem;
+    }
+    
+}
+@media (max-width: 300px) {
+    #projects button {
+        padding: calc(0.3rem + 3px) calc(0.6rem + 3px);
+        font-size: 1.2rem;
+    }
+    #projects button:hover {
+        padding: 0.3rem 0.6rem;
     }
 }
 /* Contact */
