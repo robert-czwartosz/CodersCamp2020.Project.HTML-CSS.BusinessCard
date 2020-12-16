@@ -230,7 +230,7 @@ nav {
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
-    width: 100%;
+    width: 100% !important;
 }
 ul.menu {
     background-color: hsl(var(--bg-H), var(--bg-S), calc(var(--bg-L) + 5%));
