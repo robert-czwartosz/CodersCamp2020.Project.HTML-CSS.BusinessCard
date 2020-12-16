@@ -413,6 +413,11 @@ article > section > div{
 h2 {
     font-size: 3rem;
 }
+@media (max-width: 500px) {
+    h2 {
+        font-size: 2rem;
+    }
+}
 @media (max-width: 300px) {
     article > section > div{
         padding: 1em 1em;
@@ -481,15 +486,22 @@ h2 {
     justify-content: space-between;
     flex-direction: column;
     background-color: #252525;
+    border-width: 1rem;
+    border-style: solid;
 }
 .skill:nth-child(2n){
-    border: 1rem solid #400;
+    border-color: #400;
 }
 .skill:nth-child(2n+1){
-    border: 1rem solid#040;
+    border-color: #040;
 }
 h3 {
     font-size: 2rem;
+}
+@media (max-width: 500px) {
+    h3 {
+        font-size: 1.5rem;
+    }
 }
 .skill > p:first-of-type{
     padding: 2rem 0;
@@ -533,6 +545,12 @@ h3 {
     }
     #skill-ai, #skill-desktop {
         grid-area: span 1 / span 1;
+    }
+}
+@media (max-width: 500px) {
+    .skill{
+        padding: 0.5rem;
+        border-width: 0.5rem;
     }
 }
 /* Projects */
