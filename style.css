@@ -571,7 +571,7 @@ h3 {
     justify-content: space-between;
 }
 #projects > section:nth-of-type(4n+1){
-    background-color: #726707;
+    background-color: #4d4500;
 }
 #projects > section:nth-of-type(4n+2){
     background-color: rgb(7, 17, 112);
@@ -580,7 +580,7 @@ h3 {
     background-color: rgb(7, 17, 112);
 }
 #projects > section:nth-of-type(4n){
-    background-color: #726707;
+    background-color: #4d4500;
 }
 p.date {
     color: #eeeeee;
