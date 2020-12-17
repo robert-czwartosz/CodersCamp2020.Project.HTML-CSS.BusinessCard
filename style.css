@@ -571,7 +571,7 @@ h3 {
     justify-content: space-between;
 }
 #projects > section:nth-of-type(4n+1){
-    background-color: #4d4500;
+    background-color: #423c00;
 }
 #projects > section:nth-of-type(4n+2){
     background-color: rgb(7, 17, 112);
@@ -580,7 +580,7 @@ h3 {
     background-color: rgb(7, 17, 112);
 }
 #projects > section:nth-of-type(4n){
-    background-color: #4d4500;
+    background-color: #423c00;
 }
 p.date {
     color: #eeeeee;
@@ -620,7 +620,7 @@ p > a {
         grid-template-columns: 1fr;
     }
     #projects > section:nth-of-type(2n+1){
-        background-color: #726707;
+        background-color: #423c00;
     }
     #projects > section:nth-of-type(2n){
         background-color: rgb(7, 17, 112);
