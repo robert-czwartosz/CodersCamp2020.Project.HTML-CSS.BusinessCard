@@ -571,7 +571,7 @@ h3 {
     justify-content: space-between;
 }
 #projects > section:nth-of-type(4n+1){
-    background-color: rgb(156, 146, 6);
+    background-color: #726707;
 }
 #projects > section:nth-of-type(4n+2){
     background-color: rgb(7, 17, 112);
@@ -580,10 +580,10 @@ h3 {
     background-color: rgb(7, 17, 112);
 }
 #projects > section:nth-of-type(4n){
-    background-color: rgb(156, 146, 6);
+    background-color: #726707;
 }
 p.date {
-    color: lightgrey;
+    color: #eeeeee;
     line-height: 1.2;
 }
 .date span {
@@ -620,7 +620,7 @@ p > a {
         grid-template-columns: 1fr;
     }
     #projects > section:nth-of-type(2n+1){
-        background-color: rgb(156, 146, 6);
+        background-color: #726707;
     }
     #projects > section:nth-of-type(2n){
         background-color: rgb(7, 17, 112);
