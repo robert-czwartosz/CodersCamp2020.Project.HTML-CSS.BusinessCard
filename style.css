@@ -12,6 +12,9 @@
     --fly-end3: var(--square-s);
     --fly-properties: 10s linear 0s infinite alternate;
 }
+html {
+    scroll-behavior: smooth;
+}
 * {
     margin: 0;
     padding: 0;
@@ -526,7 +529,7 @@ h3 {
     #skills {
         grid-template-columns: 1fr 1fr;
     }
-    #skill-db {
+    #skill-bazy-danych {
         grid-column: span 2;
     }
     #skill-desktop {
