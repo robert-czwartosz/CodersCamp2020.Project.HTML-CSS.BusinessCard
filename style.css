@@ -275,7 +275,7 @@ ul.menu li:last-child{
     }
     ul.menu li {
         box-sizing: border-box;
-        width: 33.3%;
+        width: 30%;
         border: none;
         border-right: var(--navbar-border-color) dotted 0.2em;
         border-bottom: var(--navbar-border-color) dotted 0.2em;
@@ -285,6 +285,9 @@ ul.menu li:last-child{
     }
     .menu a {
         padding: 0.5em 0;
+    }
+    ul.menu li:nth-child(3){
+        width: 40%;
     }
     ul.menu li:nth-child(4){
         border: none;
@@ -480,6 +483,9 @@ h2 {
     }
     #about-me > div {
         padding: 0.2em;
+        hyphens: auto;
+        -ms-hyphens: auto;
+        -moz-hyphens: auto;
     }
     #about-me > ul {
         padding: 0.5em;
@@ -689,6 +695,11 @@ p > a {
     }
     #projects > section{
         padding: 1rem;
+    }
+    #projects > section > p:nth-child(2) {
+        hyphens: auto;
+        -ms-hyphens: auto;
+        -moz-hyphens: auto;
     }
     
 }
