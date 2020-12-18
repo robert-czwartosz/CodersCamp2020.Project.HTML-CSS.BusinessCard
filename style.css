@@ -492,11 +492,26 @@ h2 {
     border-width: 1rem;
     border-style: solid;
 }
-.skill:nth-child(2n){
-    border-color: #400;
+#skill-frontend {
+    border-color: #f44336;
 }
-.skill:nth-child(2n+1){
-    border-color: #040;
+#skill-backend {
+    border-color: #9c27b0;
+}
+#skill-mobile {
+    border-color: #2196f3;
+}
+#skill-desktop {
+    border-color: #009688;
+}
+#skill-linux {
+    border-color: #8bc34a;
+}
+#skill-ai {
+    border-color: #ffc107;
+}
+#skill-bazy-danych {
+    border-color: #607d8b;
 }
 h3 {
     font-size: 2rem;
