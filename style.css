@@ -4,6 +4,7 @@
     --bg-S: 0%;
     --bg-L: 15%;
     --navbar-border-color: #077;
+
     --square-s: 10px;
     --fly-third: 33% - var(--square-s)/2;
     --fly-2thirds: 66% - var(--square-s)/2;
@@ -11,6 +12,14 @@
     --fly-end2: 100% - var(--square-s)*2;
     --fly-end3: var(--square-s);
     --fly-properties: 10s linear 0s infinite alternate;
+
+    --frontend-color: #f44336;
+    --backend-color: #9c27b0;
+    --mobile-color: #2196f3;
+    --desktop-color: #009688;
+    --linux-color: #8bc34a;
+    --ai-color: #ffc107;
+    --bazy-danych-color: #607d8b;
 }
 html {
     scroll-behavior: smooth;
@@ -493,25 +502,25 @@ h2 {
     border-style: solid;
 }
 #skill-frontend {
-    border-color: #f44336;
+    border-color: var(--frontend-color);
 }
 #skill-backend {
-    border-color: #9c27b0;
+    border-color: var(--backend-color);
 }
 #skill-mobile {
-    border-color: #2196f3;
+    border-color: var(--mobile-color);
 }
 #skill-desktop {
-    border-color: #009688;
+    border-color: var(--desktop-color);
 }
 #skill-linux {
-    border-color: #8bc34a;
+    border-color: var(--linux-color);
 }
 #skill-ai {
-    border-color: #ffc107;
+    border-color: var(--ai-color);
 }
 #skill-bazy-danych {
-    border-color: #607d8b;
+    border-color: var(--bazy-danych-color);
 }
 h3 {
     font-size: 2rem;
@@ -534,7 +543,7 @@ h3 {
 .skill li {
     display: inline-block;
     margin: 0.5em 1em;
-    background-color: black; /*hsl(var(--bg-H), var(--bg-S), var(--bg-L));*/
+    background-color: black;
 }
 .skill li a{
     display: inline-block;
@@ -618,11 +627,36 @@ p.date {
 .used-skills > li{
     display: inline-block;
     margin: 0.3em 1em;
-    background-color: hsl(var(--bg-H), var(--bg-S), var(--bg-L));
+    
 }
 .used-skills > li > a{
     display: block;
+    background-color: hsl(var(--bg-H), var(--bg-S), var(--bg-L));
     padding: 0.5rem;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 0.7em;
+}
+.used-skills > li > a[href="#skill-frontend"]{
+    border-color: var(--frontend-color);
+}
+.used-skills > li > a[href="#skill-backend"]{
+    border-color: var(--backend-color);
+}
+.used-skills > li > a[href="#skill-mobile"]{
+    border-color: var(--mobile-color);
+}
+.used-skills > li > a[href="#skill-desktop"]{
+    border-color: var(--desktop-color);
+}
+.used-skills > li > a[href="#skill-ai"]{
+    border-color: var(--ai-color);
+}
+.used-skills > li > a[href="#skill-linux"]{
+    border-color: var(--linux-color);
+}
+.used-skills > li > a[href="#skill-bazy-danych"]{
+    border-color: var(--bazy-danych-color);
 }
 #projects > section:last-child {
     align-self: center;
