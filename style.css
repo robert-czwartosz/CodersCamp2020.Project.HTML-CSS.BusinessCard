@@ -574,10 +574,8 @@ h3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    text-align: center;
 }
 #projects > section{
-    box-sizing: border-box;
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -625,6 +623,9 @@ p.date {
     border-width: 2px;
     border-radius: 0.7em;
 }
+p > a {
+    text-decoration: underline;
+}
 .used-skills > li > a[href="#skill-frontend"]{
     border-color: var(--frontend-color);
 }
@@ -649,17 +650,14 @@ p.date {
 #projects > section:last-child {
     align-self: center;
 }
-p > a {
-    text-decoration: underline;
-}
 @media (max-width: 1500px) {
     #projects {
         grid-template-columns: 1fr;
     }
-    #projects > section:nth-of-type(2n+1){
+    #projects > section:nth-of-type(odd){
         background-color: #423c00;
     }
-    #projects > section:nth-of-type(2n){
+    #projects > section:nth-of-type(even){
         background-color: rgb(7, 17, 112);
     }
 }
@@ -707,7 +705,7 @@ p > a {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    border-right: 0.2rem dotted #077;
+    border-right: var(--navbar-border);
 }
 #contact form{
     display: flex;
@@ -756,7 +754,7 @@ p > a {
     #contact > div:first-child{
         text-align: center;
         border-right: none;
-        border-bottom: 0.2rem dotted #077;
+        border-bottom: var(--navbar-border);
     }
 }
 @media (max-width: 300px) {
@@ -771,6 +769,6 @@ p > a {
 /* Footer */
 footer {
     box-sizing: border-box;
-    background-color: hsl(var(--bg-H), var(--bg-S), calc(var(--bg-L) + 2%));
-    padding: 1rem
+    background-color: var(--bg-section);
+    padding: 1rem;
 }
