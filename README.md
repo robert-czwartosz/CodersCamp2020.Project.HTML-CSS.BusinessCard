@@ -36,7 +36,9 @@ Projekt został stworzony w trakcie kursu programowania webowego CodersCamp. Cel
 
 <img src="./screenshots/navbar1.png" width="360">
 
+<p align="center">
 <img src="./screenshots/navbar2.png" width="360">
+</p>
 
 ### Możliwość pobrania mojego CV
 
@@ -52,7 +54,9 @@ Każda kategoria zawiera obramowanie o unikalnym kolorze, listę umiejętności 
 
 Każdy projekt zawiera czas wykonywania, opis, listę zastosowanych umiejętności/narzędzi (kolor obramowania wskazuje na kategorię do której dana umiejętność/narzędzie należy) oraz przycisk odsyłający do odpowiedniego repozytorium na GitHubie. Po kliknięciu w umiejętność/narzędzie następuje przeniesienie do kategorii do której należy dana umiejętność/narzędzie. Po kliknięciu w przycisk "Zobacz projekt" zostaje otwarte repozytorium danego projektu w nowej karcie w przeglądarki.
 
+<p align="center">
 <img src="./screenshots/projects.jpg" align="center">
+</p>
 
 ### Formularz
 
@@ -64,12 +68,18 @@ Wysłanie formularza powoduje **jedynie** przeładowanie strony, dlatego nie jes
 Zastosowanie Responsive Web Designu sprawia, że strona poprawnie się wyświetla na dowolnym ekranie oraz nie pojawia się poziomy pasek przewijania.
 #### Wygląd strony na laptopie
 
+<p align="center">
 <img src="./screenshots/RWDlaptop.png" align="center">
+</p>
 
 #### Wygląd strony na tablecie
 
+<p align="center">
 <img src="./screenshots/RWDtablet.png" align="center">
+</p>
 
 #### Wygląd strony na telefonie
 
+<p align="center">
 <img src="./screenshots/RWDfon.png" align="center">
+</p>
