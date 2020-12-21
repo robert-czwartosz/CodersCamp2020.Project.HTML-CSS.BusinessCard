@@ -7,7 +7,7 @@ Projekt został stworzony w trakcie kursu programowania webowego CodersCamp. Cel
 3. [Funkcjonalności](#funkcjonalnosci)
 	1. [Animacja keyframes](#Animacja-keyframes)
 	1. [Sticky navbar](#Sticky-navbar)
-	1. [Możliwość pobrania mojego CV]
+	1. [Możliwość pobrania mojego CV](#Mozliwosc-pobrania-mojego-CV)
 	1. [Lista umiejętności podzielona na kategorie](#Lista-umiejetnosci-podzielona-na-kategorie)
 	1. [Lista projektów udostępnionych na GitHubie](#Lista-projektow-udostepnionych-na-GitHubie)
 	1. [Formularz](#Formularz)
@@ -34,7 +34,11 @@ Projekt został stworzony w trakcie kursu programowania webowego CodersCamp. Cel
 
 ### Sticky navbar
 
+<img src="./screenshots/navbar1.png" width="360">
+
 ![Navbar 1](./screenshots/navbar1.png)
+
+<img src="./screenshots/navbar2.png" width="360">
 
 ![Navbar 2](./screenshots/navbar2.png)
 
