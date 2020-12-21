@@ -17,8 +17,9 @@ Projekt został stworzony w trakcie kursu programowania webowego CodersCamp. Cel
 ## Zawartość repozytorium
 * [index.html](index.html) - treść strony w HTML
 * [style.css](style.css) - arkusz styli opisujący wygląd poszczególnych elementów strony
-* [katalog fontello](fontello) - zawiera pliki umożliwiające dodanie ikonek
 * [CV_Robert_Czwartosz.pdf](CV_Robert_Czwartosz.pdf) - moje CV w formacie .pdf
+* [katalog fontello](fontello) - zawiera pliki umożliwiające dodanie ikonek
+* [katalog screenshots](screenshots) - zawiera pliki z grafikami użytymi w niniejszym opisie
 
 ## Zastosowane technologie
 * HTML
@@ -29,13 +30,14 @@ Projekt został stworzony w trakcie kursu programowania webowego CodersCamp. Cel
 
 ## Funkcjonalności
 ### Animacja keyframes
-
+Na początku strony widać animację wykonującą się w nieskończonej pętli.
 <p align="center">
 <img src="./screenshots/anim.gif">
 </p>
 
 ### Sticky navbar
 
+Po przesunięciu w dół pasek nawigacji zostaje "przyklejony" do górnej części okna przeglądarki.
 <p align="center">
 <img src="./screenshots/navbar1.png" width="360">
 </p>
@@ -46,6 +48,7 @@ Projekt został stworzony w trakcie kursu programowania webowego CodersCamp. Cel
 
 ### Możliwość pobrania mojego CV
 
+Po kliknięciu w przycisk "Moje CV" zostaje otwarty w nowej karcie przeglądarki plik .pdf zawierający CV.
 <p align="center">
 <img src="./screenshots/cv.jpg" align="center">
 </p>
