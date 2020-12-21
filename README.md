@@ -40,36 +40,36 @@ Projekt został stworzony w trakcie kursu programowania webowego CodersCamp. Cel
 
 ### Możliwość pobrania mojego CV
 
-![Moje CV](./screenshots/cv.jpg)
+<img src="./screenshots/cv.jpg" align="center">
 
 ### Lista umiejętności podzielona na kategorie
 
 Każda kategoria zawiera obramowanie o unikalnym kolorze, listę umiejętności oraz listę projektów z nią powiązanych. Po kliknięciu w projekt następuje przeniesienie do danego projektu w sekcji Projekty.
 
-![Moje CV](./screenshots/skills.jpg)
+<img src="./screenshots/skills.jpg" align="center">
 
 ### Lista projektów udostępnionych na GitHubie
 
 Każdy projekt zawiera czas wykonywania, opis, listę zastosowanych umiejętności/narzędzi (kolor obramowania wskazuje na kategorię do której dana umiejętność/narzędzie należy) oraz przycisk odsyłający do odpowiedniego repozytorium na GitHubie. Po kliknięciu w umiejętność/narzędzie następuje przeniesienie do kategorii do której należy dana umiejętność/narzędzie. Po kliknięciu w przycisk "Zobacz projekt" zostaje otwarte repozytorium danego projektu w nowej karcie w przeglądarki.
 
-![Moje CV](./screenshots/projects.jpg)
+<img src="./screenshots/projects.jpg" align="center">
 
 ### Formularz
 
 Wysłanie formularza powoduje **jedynie** przeładowanie strony, dlatego nie jest możliwy kontakt poprzez formularz. W pobliżu formularza znajdują się ikonki po kliknięciu których w nowej karcie otwarty zostaje mój profil na LinkedIn lub GitHubie.
 
-![Moje CV](./screenshots/form.jpg)
+<img src="./screenshots/form.jpg" align="center">
 
 ### Responsive Web Design
 Zastosowanie Responsive Web Designu sprawia, że strona poprawnie się wyświetla na dowolnym ekranie oraz nie pojawia się poziomy pasek przewijania.
 #### Wygląd strony na laptopie
 
-![Moje CV](./screenshots/RWDlaptop.png)
+<img src="./screenshots/RWDlaptop.png" align="center">
 
 #### Wygląd strony na tablecie
 
-![Moje CV](./screenshots/RWDtablet.png)
+<img src="./screenshots/RWDtablet.png" align="center">
 
 #### Wygląd strony na telefonie
 
-![Moje CV](./screenshots/RWDfon.png)
+<img src="./screenshots/RWDfon.png" align="center">
