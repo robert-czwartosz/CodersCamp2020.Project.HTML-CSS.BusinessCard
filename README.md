@@ -36,11 +36,7 @@ Projekt został stworzony w trakcie kursu programowania webowego CodersCamp. Cel
 
 <img src="./screenshots/navbar1.png" width="360">
 
-![Navbar 1](./screenshots/navbar1.png)
-
 <img src="./screenshots/navbar2.png" width="360">
-
-![Navbar 2](./screenshots/navbar2.png)
 
 ### Możliwość pobrania mojego CV
 
