@@ -30,11 +30,15 @@ Projekt został stworzony w trakcie kursu programowania webowego CodersCamp. Cel
 ## Funkcjonalności
 ### Animacja keyframes
 
-![Animacja](./screenshots/anim.gif)
+<p align="center">
+<img src="./screenshots/anim.gif">
+</p>
 
 ### Sticky navbar
 
+<p align="center">
 <img src="./screenshots/navbar1.png" width="360">
+</p>
 
 <p align="center">
 <img src="./screenshots/navbar2.png" width="360">
@@ -42,13 +46,17 @@ Projekt został stworzony w trakcie kursu programowania webowego CodersCamp. Cel
 
 ### Możliwość pobrania mojego CV
 
+<p align="center">
 <img src="./screenshots/cv.jpg" align="center">
+</p>
 
 ### Lista umiejętności podzielona na kategorie
 
 Każda kategoria zawiera obramowanie o unikalnym kolorze, listę umiejętności oraz listę projektów z nią powiązanych. Po kliknięciu w projekt następuje przeniesienie do danego projektu w sekcji Projekty.
 
+<p align="center">
 <img src="./screenshots/skills.jpg" align="center">
+</p>
 
 ### Lista projektów udostępnionych na GitHubie
 
@@ -62,7 +70,9 @@ Każdy projekt zawiera czas wykonywania, opis, listę zastosowanych umiejętnoś
 
 Wysłanie formularza powoduje **jedynie** przeładowanie strony, dlatego nie jest możliwy kontakt poprzez formularz. W pobliżu formularza znajdują się ikonki po kliknięciu których w nowej karcie otwarty zostaje mój profil na LinkedIn lub GitHubie.
 
+<p align="center">
 <img src="./screenshots/form.jpg" align="center">
+</p>
 
 ### Responsive Web Design
 Zastosowanie Responsive Web Designu sprawia, że strona poprawnie się wyświetla na dowolnym ekranie oraz nie pojawia się poziomy pasek przewijania.
