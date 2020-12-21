@@ -11,26 +11,51 @@ Projekt został stworzony w trakcie kursu programowania webowego CodersCamp. Cel
 * CSS
 * Fontello
 * Responsive Web Design
+* GitHub Pages
 
 ## Funkcjonalności
 ### Animacja keyframes
-![Animacja screen](screenshots/animacja.bmp)
+
+![Animacja](./screenshots/anim.gif)
+
 ### Sticky navbar
-Screen navbar
-Screen inny navbar
+
+![Navbar 1](./screenshots/navbar1.jpg)
+
+![Navbar 2](./screenshots/navbar2.jpg)
+
 ### Możliwość pobrania mojego CV
-Screen moja strona
-Screen moje CV
+
+![Moje CV](./screenshots/cv.jpg)
+
 ### Lista umiejętności podzielona na kategorie
-Screeny skills
-każda kategoria zawiera listę umiejętności oraz projektów z nią powiązanych
+
+Każda kategoria zawiera obramowanie o unikalnym kolorze, listę umiejętności oraz projektów z nią powiązanych. Po kliknięciu w projekt następuje przeniesienie do danego projektu w sekcji Projekty.
+
+![Moje CV](./screenshots/skills.jpg)
+
 ### Lista projektów udostępnionych na GitHubie
-Screeny projects
-każdy projekt zawiera czas wykonywania, opis, listę zastosowanych umiejętności/narzędzi (kolor obramowania wskazuje na kategorię do której dana umiejętność/narzędzie należy), przycisk odsyłający do odpowiedniego repozytorium na GitHubie
+
+Każdy projekt zawiera czas wykonywania, opis, listę zastosowanych umiejętności/narzędzi (kolor obramowania wskazuje na kategorię do której dana umiejętność/narzędzie należy) oraz przycisk odsyłający do odpowiedniego repozytorium na GitHubie. Po kliknięciu w umiejętność/narzędzie następuje przeniesienie do kategorii do której należy dana umiejętność/narzędzie. Po kliknięciu w przycisk "Zobacz projekt" zostaje otwarte repozytorium danego projektu w nowej karcie w przeglądarki.
+
+![Moje CV](./screenshots/projects.jpg)
+
 ### Formularz
-Screen formularz
-wysłanie formularza powoduje **jedynie** przeładowanie strony)
+
+Wysłanie formularza powoduje **jedynie** przeładowanie strony, dlatego nie jest możliwy kontakt poprzez formularz. W pobliżu formularza znajdują się ikonki po kliknięciu których w nowej karcie otwarty zostaje mój profil na LinkedIn lub GitHubie. Poniżej ikonek znajduje się moje imię i nazwisko oraz adres e-mail.
+
+![Moje CV](./screenshots/form.jpg)
+
 ### Responsive Web Design
-Screen notebook
-Screen tablet
-Screen telefon
+
+#### Wygląd strony na laptopie
+
+![Moje CV](./screenshots/RWDlaptop.png)
+
+#### Wygląd strony na tablecie
+
+![Moje CV](./screenshots/RWDtablet.png)
+
+#### Wygląd strony na telefonie
+
+![Moje CV](./screenshots/RWDfon.png)
