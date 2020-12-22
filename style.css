@@ -766,6 +766,10 @@ p > a {
         padding: 1rem 0;
     }
 }
+.warning {
+    color: orange;
+    text-align: left;
+}
 /* Footer */
 footer {
     box-sizing: border-box;
